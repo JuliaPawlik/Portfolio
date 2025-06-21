@@ -30,13 +30,37 @@
         </div>
 
         <main class="content">
-            <section class="main-section">
-                <h2>Opis projektu</h2>
-                <p>Tu będzie opis projektu 1 – co robi, kiedy powstał, jakie technologie zostały użyte itd.</p>
+            <div class="projectDetails-grid">
+                <a href="javascript:void(0)" class="project-card" data-target="ogolne">Ogólne</a>
+                <a href="javascript:void(0)" class="project-card" data-target="wizualizacje">Wizualizacje</a>
+                <a href="javascript:void(0)" class="project-card" data-target="schematy">Schematy</a>
+                <a href="javascript:void(0)" class="project-card" data-target="rzuty">Rzuty</a>
+            </div>
+
+            <section class="main-section" data-target="ogolne">
+                <p>Tu pojawi się ogólny opis projektu.</p>
             </section>
+            <section class="main-section" data-target="wizualizacje" style="display:none;">
+                <div class="image-with-caption">
+                    <img src="images/projekt1/tyl.jpg" alt="Widok budynku od strony wewnętrznego placu" />
+                    <p class="caption">Widok budynku od strony wewnętrznego placu</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="images/projekt1/front.jpg" alt="Elewacja budynku od strony ulicy" />
+                    <p class="caption">Elewacja budynku od strony ulicy</p>
+                </div>
+            </section>
+            <section class="main-section" data-target="schematy" style="display:none;">
+                <p>Schematy będą dostępne wkrótce.</p>
+            </section>
+            <section class="main-section" data-target="rzuty" style="display:none;">
+                <p>Tutaj pojawią się rzuty techniczne.</p>
+            </section>
+
         </main>
 
     </div>
+    <script src="projekt1.js"></script>
 
 </body>
 </html>
