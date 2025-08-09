@@ -37,26 +37,6 @@ body {
   justify-content: center;
 }
 
-/* PROFILÓWKA */
-.profile-pic {
-  position: absolute;
-  top: 167px;              /* przesunięcie w pionie */
-  left: 183px;             /* od lewej krawędzi */
-  width: 300px;
-  height: 300px;
-  border-radius: 15%;
-  overflow: hidden;
-  border: 4px solid white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  z-index: 2;              /* żeby było NAD tłem */
-}
-
-.profile-pic img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* MENU */
 .menu {
   display: flex;
@@ -100,7 +80,6 @@ body {
 
 .project-card {
   position: relative; /* żeby overlay mógł być absolutny */
-  border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
   aspect-ratio: 1 / 1;
