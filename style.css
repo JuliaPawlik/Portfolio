@@ -6,17 +6,17 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f0e6dd; /* jasne tło jak papier */
-  padding: 40px 0;
+  background-color: #ffffff; /* pełna biel */
+  padding: 0; /* usuwamy odstęp */
 }
 
 .page-wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px 40px; /* 40px po bokach wewnątrz kartki */
-  background-color: #fffaf5; /* lub inny jasny */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  padding: 0; /* jeśli chcesz treść od krawędzi */
+  background-color: #ffffff; /* ta sama biel co body */
+  box-shadow: none; /* usuwamy cień */
+  border-radius: 0; /* brak zaokrągleń */
 }
 
 /* HERO ZDĘCIE */
@@ -28,8 +28,27 @@ body {
   position: relative;
 }
 
+.hero-projekt1 {
+    background-image: url('images/projekt1/prof.jpg');
+}
+.hero-projekt2 {
+    background-image: url('images/projekt2/prof.jpg');
+}
+.hero-projekt3 {
+    background-image: url('images/prof_proxy.jpg');
+}
+.hero-projekt4 {
+    background-image: url('images/projekt4/prof.jpg');
+}
+.hero-projekt5 {
+    background-image: url('images/prof_proxy.jpg');
+}
+.hero-projekt6 {
+    background-image: url('images/projekt6/prof.jpg');
+}
+
 .hero .overlay {
-  background-color: rgba(70, 25, 25, 0.5); /* ceglasty półprzezroczysty */
+  background-color: rgba(0, 0, 0, 0.5); /* ceglasty półprzezroczysty */
   height: 100%;
   color: white;
   display: flex;
@@ -41,7 +60,7 @@ body {
 .menu {
   display: flex;
   justify-content: center;
-  background-color: #8b3a3a; /* ceglasty */
+  background-color: #2a2a2a; /* ceglasty */
   padding: 12px 0;
 }
 
@@ -54,7 +73,7 @@ body {
 }
 
 .menu a:hover {
-  color: #ffdab9; /* jasny akcent */
+  color: #8c8c8c; /* jasny akcent */
 }
 
 /* TREŚĆ */
@@ -63,7 +82,7 @@ body {
 }
 
 .main-section h2 {
-  color: #8b3a3a;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -134,16 +153,15 @@ body {
   display: inline-block;
   font-size: 1.1rem;      /* zwiększenie czcionki */
   padding: 10px 20px;     /* wewnętrzne marginesy */
-  background-color: #8b3a3a;  /* ceglasty */
+  background-color: #000000;  /* ceglasty */
   color: white;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .back-button a:hover {
-  background-color: #a54a4a;
+  background-color: #000000;
 }
 
 .image-with-caption {
@@ -174,7 +192,7 @@ body {
 
 .project-card.active {
   background-color: #e9cfc3; /* jaśniejszy kolor podświetlenia */
-  border: 2px solid #8b3a3a;
+  border: 2px solid #000000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
