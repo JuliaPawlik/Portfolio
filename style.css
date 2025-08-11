@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #ffffff; /* pełna biel */
   padding: 0; /* usuwamy odstęp */
 }
@@ -46,9 +46,27 @@ body {
 .hero-projekt6 {
     background-image: url('images/projekt6/prof.jpg');
 }
+.hero-projekt7 {
+    background-image: url('images/projekt7/prof.jpg');
+}
+.hero-projekt8 {
+    background-image: url('images/prof_proxy.jpg');
+}
+.hero-projekt9 {
+    background-image: url('images/projekt9/prof.jpg');
+}
+.hero-projekt10 {
+    background-image: url('images/projekt10/prof.jpg');
+}
+.hero-projekt11 {
+    background-image: url('images/projekt11/prof.jpg');
+}
+.hero-projekt12 {
+    background-image: url('images/prof_proxy.jpg');
+}
 
 .hero .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* ceglasty półprzezroczysty */
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   color: white;
   display: flex;
@@ -60,7 +78,7 @@ body {
 .menu {
   display: flex;
   justify-content: center;
-  background-color: #2a2a2a; /* ceglasty */
+  background-color: #2a2a2a;
   padding: 12px 0;
 }
 
@@ -78,12 +96,12 @@ body {
 
 /* TREŚĆ */
 .content {
-  padding: 30px;
+  padding: 0px;
 }
 
 .main-section h2 {
   color: #000000;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .main-section p {
@@ -95,6 +113,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
+  padding: 30px 0;
 }
 
 .project-card {
@@ -125,7 +144,6 @@ body {
 
 .project-card h3 {
   margin: 0;
-  font-size: 1.1rem;
   color: #ddd;
 }
 
@@ -151,7 +169,6 @@ body {
 
 .back-button a {
   display: inline-block;
-  font-size: 1.1rem;      /* zwiększenie czcionki */
   padding: 10px 20px;     /* wewnętrzne marginesy */
   background-color: #000000;  /* ceglasty */
   color: white;
