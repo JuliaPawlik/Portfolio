@@ -64,6 +64,18 @@ body {
 .hero-projekt12 {
     background-image: url('images/prof_proxy.jpg');
 }
+.hero-projekt13 {
+    background-image: url('images/projekt13/prof.jpg');
+}
+.hero-projekt14 {
+    background-image: url('images/projekt14/prof.jpg');
+}
+.hero-projekt15 {
+    background-image: url('images/projekt15/prof.jpg');
+}
+.hero-projekt16 {
+    background-image: url('images/projekt16/prof.jpg');
+}
 
 .hero .overlay {
   background-color: rgba(0, 0, 0, 0.5);
