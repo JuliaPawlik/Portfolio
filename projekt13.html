@@ -6,6 +6,12 @@
     <title>Grafiki uzupełniające pisemną standaryzację tworzenia pizzy</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
 </head>
 <body>
 
@@ -27,30 +33,6 @@
                 <p>Tu będzie opis projektu 13 – co robi, kiedy powstał, jakie technologie zostały użyte itd.</p>
 
                 <div class="image-with-caption">
-                    <img src="images/projekt13/wizka1.jpg" alt="Wizualizacja 1" class="clickable-img">
-                    <div class="caption">Wizualizacja 1</div>
-                </div>
-                <div class="image-with-caption">
-                    <img src="images/projekt13/wizka2.jpg" alt="Wizualizacja 2" class="clickable-img">
-                    <div class="caption">Wizualizacja 2</div>
-                </div>
-                <div class="image-with-caption">
-                    <img src="images/projekt13/wizka3.jpg" alt="Wizualizacja 3" class="clickable-img">
-                    <div class="caption">Wizualizacja 3</div>
-                </div>
-                <div class="image-with-caption">
-                    <img src="images/projekt13/wizka4.jpg" alt="Wizualizacja 4" class="clickable-img">
-                    <div class="caption">Wizualizacja 4</div>
-                </div>
-                <div class="image-with-caption">
-                    <img src="images/projekt13/wizka5.jpg" alt="Wizualizacja 5" class="clickable-img">
-                    <div class="caption">Wizualizacja 5</div>
-                </div>
-                <div class="image-with-caption">
-                    <img src="images/projekt13/wizka6.jpg" alt="Wizualizacja 6" class="clickable-img">
-                    <div class="caption">Wizualizacja 6</div>
-                </div>
-                <div class="image-with-caption">
                     <img src="images/projekt13/wizka7.jpg" alt="Wizualizacja 7" class="clickable-img">
                     <div class="caption">Wizualizacja 7</div>
                 </div>
@@ -62,12 +44,44 @@
                     <img src="images/projekt13/wizka9.jpg" alt="Wizualizacja 9" class="clickable-img">
                     <div class="caption">Wizualizacja 9</div>
                 </div>
+
+                <h2 style="margin-top: 100px;">Graficzne przedstawienie różnych rodzajów pizzy</h2>
+
+                <!-- Główny slider -->
+                <div class="swiper pizza-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/projekt13/wizka1.jpg" alt="Pizza 1" class="clickable-img"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka2.jpg" alt="Pizza 2" class="clickable-img"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka3.jpg" alt="Pizza 3" class="clickable-img"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka4.jpg" alt="Pizza 4" class="clickable-img"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka5.jpg" alt="Pizza 5" class="clickable-img"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka6.jpg" alt="Pizza 6" class="clickable-img"></div>
+                    </div>
+                    <!-- Strzałki -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <!-- Miniaturki -->
+                <div class="swiper pizza-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/projekt13/wizka1.jpg" alt="Mini 1"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka2.jpg" alt="Mini 2"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka3.jpg" alt="Mini 3"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka4.jpg" alt="Mini 4"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka5.jpg" alt="Mini 5"></div>
+                        <div class="swiper-slide"><img src="images/projekt13/wizka6.jpg" alt="Mini 6"></div>
+                    </div>
+                </div>
             </section>
         </main>
 
     </div>
 
     <script src="script.js" defer></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </body>
 </html>

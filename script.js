@@ -56,4 +56,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // miniaturki
+  const thumbsSwiper = new Swiper(".pizza-thumbs", {
+    spaceBetween: 10,
+    slidesPerView: 6,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  // główny slider
+  const mainSwiper = new Swiper(".pizza-main", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
+  });
+
 });
