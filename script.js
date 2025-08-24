@@ -56,25 +56,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // miniaturki
-  const thumbsSwiper = new Swiper(".pizza-thumbs", {
-    spaceBetween: 10,
-    slidesPerView: 6,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
+  const mainEls = document.querySelectorAll(".slider-main");
+  const thumbsEls = document.querySelectorAll(".slider-thumbs");
 
-  // główny slider
-  const mainSwiper = new Swiper(".pizza-main", {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: thumbsSwiper,
-    },
+  // przechodzimy parami: i-ty main z i-tymi thumbs
+  mainEls.forEach((mainEl, i) => {
+    const thumbsEl = thumbsEls[i];
+    if (!thumbsEl) return; // brak pary? pomijamy
+
+    // nawigacja – bierzemy strzałki TYLKO z tego slidera
+    const nextEl = mainEl.querySelector(".swiper-button-next");
+    const prevEl = mainEl.querySelector(".swiper-button-prev");
+
+    // miniaturki
+    const thumbsSwiper = new Swiper(thumbsEl, {
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+
+    // główny slider
+    const mainSwiper = new Swiper(mainEl, {
+      loop: true,          // pętla
+      spaceBetween: 10,
+      navigation: { nextEl, prevEl },
+      thumbs: { swiper: thumbsSwiper },
+    });
   });
 
 });
