@@ -82,8 +82,22 @@ body {
   height: 100%;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-family: 'Ms Madi', cursive;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 /* MENU */
