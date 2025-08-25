@@ -126,6 +126,12 @@ body {
 }
 
 .main-section h2 {
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.main-section h3 {
   color: #000000;
   margin-top: 20px;
   margin-left: 35px;
@@ -134,7 +140,13 @@ body {
 .main-section p {
   margin-bottom: 20px;
   margin-left: 35px;
-  color: #333;
+  color: #ffffff;
+}
+
+.main-section h4 {
+  margin-bottom: 20px;
+  margin-left: 35px;
+  color: #000000;
 }
 
 .projects-grid {
