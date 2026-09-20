@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Ms+Madi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- HERO -->
+
+        <header class="hero" id="hero">
+
+            <div class="overlay">
+                <h1 id="project-title"></h1>
+            </div>
+
+        </header>
+
+
+        <!-- POWRÓT -->
+
+        <div class="back-button">
+            <a href="index.html#projekty">
+                ← Wróć do projektów
+            </a>
+        </div>
+
+
+        <!-- TREŚĆ -->
+
+        <main class="content">
+
+            <section class="main-section">
+
+                <h2>Opis projektu</h2>
+
+                <p id="project-description"></p>
+
+
+                <!-- GALERIA -->
+
+                <div id="project-gallery" class="project-gallery">
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <img id="lightbox-image" src="" alt="">
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="data/projekty.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
