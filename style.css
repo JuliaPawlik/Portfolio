@@ -21,60 +21,13 @@ body {
 
 /* HERO ZDĘCIE */
 .hero {
-  background-image: url('images/tlo.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  position: relative;
-}
+    height: 350px;
+    position: relative;
 
-.hero-projekt1 {
-    background-image: url('images/projekt1/prof.jpg');
-}
-.hero-projekt2 {
-    background-image: url('images/projekt2/prof.jpg');
-}
-.hero-projekt3 {
-    background-image: url('images/projekt3/prof.jpg');
-}
-.hero-projekt4 {
-    background-image: url('images/projekt4/prof.jpg');
-}
-.hero-projekt5 {
-    background-image: url('images/projekt5/prof.jpg');
-}
-.hero-projekt6 {
-    background-image: url('images/projekt6/prof.jpg');
-}
-.hero-projekt7 {
-    background-image: url('images/projekt7/prof.jpg');
-}
-.hero-projekt8 {
-    background-image: url('images/prof_proxy.jpg');
-}
-.hero-projekt9 {
-    background-image: url('images/projekt9/prof.jpg');
-}
-.hero-projekt10 {
-    background-image: url('images/projekt10/prof.jpg');
-}
-.hero-projekt11 {
-    background-image: url('images/projekt11/prof.jpg');
-}
-.hero-projekt12 {
-    background-image: url('images/prof_proxy.jpg');
-}
-.hero-projekt13 {
-    background-image: url('images/projekt13/prof.jpg');
-}
-.hero-projekt14 {
-    background-image: url('images/projekt14/prof.jpg');
-}
-.hero-projekt15 {
-    background-image: url('images/projekt15/prof.jpg');
-}
-.hero-projekt16 {
-    background-image: url('images/projekt16/prof.jpg');
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero .overlay {
@@ -180,6 +133,7 @@ body {
 
 .project-card .overlay {
   width: 100%;
+  min-height: 65px;
   background-color: rgba(0, 0, 0, 0.5); /* półprzezroczysty czarny */
   padding: 10px;
 }
@@ -201,10 +155,6 @@ body {
 }
 
 .back-button {
-  margin-bottom: 20px;
-}
-
-.back-button {
   margin: 20px 0;
   text-align: left;
 }
@@ -221,25 +171,6 @@ body {
 
 .back-button a:hover {
   background-color: #000000;
-}
-
-.image-with-caption {
-  width: 75%;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.image-with-caption img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.image-with-caption .caption {
-  margin-top: 0.5rem;
-  font-style: italic;
-  color: #555;
 }
 
 .placeholder {
@@ -268,6 +199,7 @@ body {
     border-radius: 8px;
     cursor: zoom-in;
     transition: transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .image-with-caption img:hover {
     transform: scale(1.02);
